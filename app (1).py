@@ -10,7 +10,7 @@ def answer_call():
 
     if "machine" in answered_by.lower():
         # Voicemail detected — play Ava's recording from static path
-        response.play("https://yourappname.onrender.com/static/audio/ava-voicemail.mp3")
+        response.play("https://ava-calling-service.onrender.com/static/audio/ava-voicemail.mp3")
     else:
         # Live person — brief message or routing
         response.say("Hi there! This call was intended for voicemail. We’ll follow up again soon.")
